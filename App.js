@@ -5,8 +5,8 @@ import Speedometer from 'react-native-speedometer-chart';
 export default class Main extends Component {
   render() {
     return (
-      <ScrollView style={{ flex: 1, padding: 20 }}>
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <ScrollView style={{ flex: 1 }}>
+        <View style={{ flex: 1, padding: 50, justifyContent: 'center', alignItems: 'center' }}>
           <StatusBar hidden />
 
           <Text>25%</Text>

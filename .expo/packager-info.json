@@ -2,8 +2,8 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
-  "packagerPid": 8213,
-  "expoServerNgrokUrl": "https://py-emx.anonymous.speedometer-chart-example.exp.direct",
-  "packagerNgrokUrl": "https://packager.py-emx.anonymous.speedometer-chart-example.exp.direct",
-  "ngrokPid": 8270
+  "packagerPid": 9305,
+  "expoServerNgrokUrl": "https://py-emx.lucasmonteiro1.speedometer-chart-example.exp.direct",
+  "packagerNgrokUrl": "https://packager.py-emx.lucasmonteiro1.speedometer-chart-example.exp.direct",
+  "ngrokPid": 9361
 }

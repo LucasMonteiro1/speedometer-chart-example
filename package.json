@@ -1,6 +1,7 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "author": "Lucas Monteiro",
+  "private": true,
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -15,6 +16,5 @@
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0"
-  },
-  "private": true
+  }
 }

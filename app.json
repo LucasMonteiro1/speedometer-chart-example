@@ -24,6 +24,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "Example for speedometer chart",
+    "githubUrl": "https://github.com/LucasMonteiro1/speedometer-chart-example"
   }
 }
