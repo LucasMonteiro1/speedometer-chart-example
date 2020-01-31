@@ -11,7 +11,7 @@ export default class Main extends Component {
 
           <Text>25%</Text>
           <Speedometer value={25} totalValue={100} />
-
+          
           <Text>50%</Text>
           <Speedometer value={50} totalValue={100} />
 
@@ -38,7 +38,11 @@ export default class Main extends Component {
           />
 
           <Text>Needle</Text>
+          <Speedometer value={0} totalValue={100} showIndicator />
           <Speedometer value={25} totalValue={100} showIndicator />
+          <Speedometer value={50} totalValue={100} showIndicator />
+          <Speedometer value={75} totalValue={100} showIndicator />
+          <Speedometer value={100} totalValue={100} showIndicator />
         </View>
       </ScrollView>
     );
