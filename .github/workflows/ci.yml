@@ -1,4 +1,4 @@
-name: Publish Package
+name: Publish Expo
 
 on:
   push:
@@ -6,31 +6,6 @@ on:
       - master
 
 jobs:
-  prepare:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - run: npm install
-      - run: npm run lint
-
-  publish-npm:
-    needs: prepare
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-          registry-url: 'https://registry.npmjs.org'
-      - run: rm ./example -r
-      - run: npm install
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
-
   publish-expo:
     needs: prepare
     runs-on: ubuntu-latest
@@ -45,6 +20,4 @@ jobs:
           expo-username: ${{ secrets.EXPO_CLI_USERNAME }}
           expo-password: ${{ secrets.EXPO_CLI_PASSWORD }}
       - run: npm install
-        working-directory: ./example
       - run: expo publish
-        working-directory: ./example
